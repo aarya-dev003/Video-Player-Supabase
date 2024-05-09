@@ -3,7 +3,7 @@
 ## Overview
 This is a video player app built using Jetpack Compose for the UI, ExoPlayer for video playback, and Supabase for data storage in PostgreSQL. Additionally, Supabase Storage is used to store video files.
 ## Download APK
-You can download the latest APK from Google Drive. [Click here](https://drive.google.com/file/d/1YR7DkDYyiuKuEY_MEn-gG4eOMU2gt3X9/view?usp=sharing) to navigate to the releases page.
+You can download the latest APK from Google Drive. [Click here](https://drive.google.com/file/d/1xHiStPWi7HYybVWDw1YdtzLJPGcIcYsW/view?usp=sharing) to navigate to the releases page.
 
 ## Features
 - Browse and play videos
