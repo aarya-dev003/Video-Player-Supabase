@@ -13,9 +13,14 @@ jobs:
           java-version: "19"
           distribution: "temurin"
           cache: gradle
+      - name: Make Gradle executable
+        run: chmod +x ./gradlew
       - name: Build with Gradle
         run: ./gradlew assembleDebug
       - uses: actions/upload-artifact@v2
         with:
           name: app-debug.apk
           path: app/build/outputs/apk/debug/app-debug.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          APP_FOLDER: app
