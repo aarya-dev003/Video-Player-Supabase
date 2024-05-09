@@ -3,6 +3,9 @@ name: Android Release
 on:
   release:
     types: [created]
+  push:
+    tags:
+      - "*"
 
 jobs:
 
