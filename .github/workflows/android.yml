@@ -24,3 +24,6 @@ jobs:
         with:
           name: release-apk
           path: app/build/outputs/apk/release/app-release-unsigned.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          APP_FOLDER: app
