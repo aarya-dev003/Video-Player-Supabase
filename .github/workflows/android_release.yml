@@ -2,7 +2,7 @@ name: Android Release
 
 on:
   release:
-    types: [created]
+    types: "*"
   push:
     tags:
       - "*"
@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/build/outputs/apk/release/**/*.apk
 
   release:
     needs: build
@@ -47,6 +47,7 @@ jobs:
       - name: Release APK
         uses: ncipollo/release-action@v1
         with:
-          artifact: "app/build/outputs/apk/debug/app-debug.apk"
+          artifact: "app/build/outputs/apk/release/**/*.apk"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
+          env: app
