@@ -1,0 +1,165 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aarya.videoplayer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:5:5-66
+11-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:6:5-78
+12-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:6:22-76
+13
+14    <permission
+14-->[androidx.core:core:1.13.1] C:\Users\aarya\.gradle\caches\transforms-3\125d899d46bda44f211b3650620a07b3\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+15        android:name="com.aarya.videoplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.13.1] C:\Users\aarya\.gradle\caches\transforms-3\125d899d46bda44f211b3650620a07b3\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.13.1] C:\Users\aarya\.gradle\caches\transforms-3\125d899d46bda44f211b3650620a07b3\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.aarya.videoplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.13.1] C:\Users\aarya\.gradle\caches\transforms-3\125d899d46bda44f211b3650620a07b3\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.13.1] C:\Users\aarya\.gradle\caches\transforms-3\125d899d46bda44f211b3650620a07b3\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:8:5-31:19
+21        android:allowBackup="true"
+21-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:9:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.13.1] C:\Users\aarya\.gradle\caches\transforms-3\125d899d46bda44f211b3650620a07b3\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:10:9-65
+24        android:debuggable="true"
+25        android:enableOnBackInvokedCallback="true"
+25-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:17:9-51
+26        android:extractNativeLibs="false"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:11:9-54
+28        android:icon="@mipmap/ic_launcher"
+28-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:12:9-43
+29        android:label="@string/app_name"
+29-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:13:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:14:9-54
+31        android:supportsRtl="true"
+31-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:15:9-35
+32        android:theme="@style/Theme.VideoPlayer" >
+32-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:16:9-49
+33        <activity
+33-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:20:9-30:20
+34            android:name="com.aarya.videoplayer.MainActivity"
+34-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:21:13-41
+35            android:exported="true"
+35-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:22:13-36
+36            android:theme="@style/Theme.VideoPlayer" >
+36-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:23:13-53
+37            <intent-filter>
+37-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:25:13-28:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:26:17-69
+38-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:26:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:27:17-77
+40-->D:\Kriyeta\VideoPlayer\app\src\main\AndroidManifest.xml:27:27-74
+41            </intent-filter>
+42        </activity>
+43
+44        <provider
+44-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aarya\.gradle\caches\transforms-3\41867184490673c9968efd34a4be4c00\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+45            android:name="androidx.startup.InitializationProvider"
+45-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aarya\.gradle\caches\transforms-3\41867184490673c9968efd34a4be4c00\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+46            android:authorities="com.aarya.videoplayer.androidx-startup"
+46-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aarya\.gradle\caches\transforms-3\41867184490673c9968efd34a4be4c00\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+47            android:exported="false" >
+47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aarya\.gradle\caches\transforms-3\41867184490673c9968efd34a4be4c00\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+48            <meta-data
+48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aarya\.gradle\caches\transforms-3\41867184490673c9968efd34a4be4c00\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+49                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aarya\.gradle\caches\transforms-3\41867184490673c9968efd34a4be4c00\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+50                android:value="androidx.startup" />
+50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\aarya\.gradle\caches\transforms-3\41867184490673c9968efd34a4be4c00\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+51            <meta-data
+51-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.3.1] C:\Users\aarya\.gradle\caches\transforms-3\aa892f7d432871523cc7b8cbf5bd0587\transformed\gotrue-kt-debug\AndroidManifest.xml:14:13-16:52
+52                android:name="io.github.jan.supabase.gotrue.SupabaseInitializer"
+52-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.3.1] C:\Users\aarya\.gradle\caches\transforms-3\aa892f7d432871523cc7b8cbf5bd0587\transformed\gotrue-kt-debug\AndroidManifest.xml:15:17-81
+53                android:value="androidx.startup" />
+53-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.3.1] C:\Users\aarya\.gradle\caches\transforms-3\aa892f7d432871523cc7b8cbf5bd0587\transformed\gotrue-kt-debug\AndroidManifest.xml:16:17-49
+54            <meta-data
+54-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\aarya\.gradle\caches\transforms-3\164a90aff1dd443f849a1e126bfefabe\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+55-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\aarya\.gradle\caches\transforms-3\164a90aff1dd443f849a1e126bfefabe\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+56                android:value="androidx.startup" />
+56-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\aarya\.gradle\caches\transforms-3\164a90aff1dd443f849a1e126bfefabe\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+57            <meta-data
+57-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+58-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+59                android:value="androidx.startup" />
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+60            <meta-data
+60-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] C:\Users\aarya\.gradle\caches\transforms-3\cd3b48c6e543e7b71adf9379486303f1\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:29:13-31:52
+61                android:name="com.russhwolf.settings.SettingsInitializer"
+61-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] C:\Users\aarya\.gradle\caches\transforms-3\cd3b48c6e543e7b71adf9379486303f1\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:30:17-74
+62                android:value="androidx.startup" />
+62-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] C:\Users\aarya\.gradle\caches\transforms-3\cd3b48c6e543e7b71adf9379486303f1\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:31:17-49
+63        </provider>
+64
+65        <activity
+65-->[androidx.compose.ui:ui-test-manifest:1.6.7] C:\Users\aarya\.gradle\caches\transforms-3\c5599f6ac7c7af7743e506d3e4f3094d\transformed\ui-test-manifest-1.6.7\AndroidManifest.xml:23:9-25:39
+66            android:name="androidx.activity.ComponentActivity"
+66-->[androidx.compose.ui:ui-test-manifest:1.6.7] C:\Users\aarya\.gradle\caches\transforms-3\c5599f6ac7c7af7743e506d3e4f3094d\transformed\ui-test-manifest-1.6.7\AndroidManifest.xml:24:13-63
+67            android:exported="true" />
+67-->[androidx.compose.ui:ui-test-manifest:1.6.7] C:\Users\aarya\.gradle\caches\transforms-3\c5599f6ac7c7af7743e506d3e4f3094d\transformed\ui-test-manifest-1.6.7\AndroidManifest.xml:25:13-36
+68        <activity
+68-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\aarya\.gradle\caches\transforms-3\a748fb3686b78bcb15493c663ceece2e\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+69            android:name="androidx.compose.ui.tooling.PreviewActivity"
+69-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\aarya\.gradle\caches\transforms-3\a748fb3686b78bcb15493c663ceece2e\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+70            android:exported="true" />
+70-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\aarya\.gradle\caches\transforms-3\a748fb3686b78bcb15493c663ceece2e\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+71
+72        <receiver
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+74            android:directBootAware="false"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+75            android:enabled="true"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+76            android:exported="true"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+77            android:permission="android.permission.DUMP" >
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+78            <intent-filter>
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+80            </intent-filter>
+81            <intent-filter>
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+83            </intent-filter>
+84            <intent-filter>
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+86            </intent-filter>
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\aarya\.gradle\caches\transforms-3\fa11528703a7f3f9600a512a6ded5aaa\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+89            </intent-filter>
+90        </receiver>
+91    </application>
+92
+93</manifest>
