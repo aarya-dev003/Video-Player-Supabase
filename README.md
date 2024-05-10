@@ -27,7 +27,7 @@ To run this project locally and use the video player app, follow these steps:
 
 1. Clone the repository to your local machine:
     ```sh
-    git clone https://github.com/yourusername/videoplayer.git
+    git clone https://github.com/aarya-dev003/Video-Player-Supabase.git
     ```
 
 2. Create a Supabase account and set up a new project.
