@@ -8,17 +8,17 @@ on:
       - "*"
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: 19
+          java-version: 17
           distribution: 'temurin'
 
       - name: Grant execute permission for gradlew
@@ -30,8 +30,8 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: app
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: app-release
+          path: app/build/outputs/apk/release/app-release-unsigned.apk
 
   release:
     needs: build
@@ -41,14 +41,34 @@ jobs:
       - name: Download APK
         uses: actions/download-artifact@v2
         with:
-          name: app
+          name: app-release
+          path: app/build/outputs/apk/release
 
-      - name: Release APK
-        uses: ncipollo/release-action@v1
+      - name: Get tag name
+        run: |
+          echo "VERSION_TAG=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_ENV
+
+      - name: Compute Checksums
+        run: |
+          sha256sum app/build/outputs/apk/release/app-release-unsigned.apk | tee checksums.txt
+          while read -r line; do
+            sha=$(echo $line | awk '{ print $1 }')
+            echo "APK_SHA=$sha" >> $GITHUB_ENV
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
         with:
-          artifacts: "app/build/outputs/apk/debug/app-debug.apk"
-          allowUpdates: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: ${{ env.VERSION_TAG }}
+          name: Release ${{ env.VERSION_TAG }}
+          body: |
+            ### Checksums
 
-env:
-  APP_FOLDER: app
+            | Variant | SHA-256 |
+            | ------- | ------- |
+            | app-release-unsigned.apk | ${{ env.APK_SHA }} |
+
+          files: app/build/outputs/apk/release/app-release-unsigned.apk
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
